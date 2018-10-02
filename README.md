@@ -8,9 +8,9 @@ The Art of Drafting: A Team-Oriented Hero Recommendation System for Multiplayer 
 Authors: Zhengxing Chen, Truong-Huy D Nguyen, Yuyu Xu, Chris Amato, Seth Cooper, Yizhou Sun, Magy Seif El-Nasr
 
 ### Usage
-The code shows our algorithm for hero recommendation in [Captain Mode](https://dota2.gamepedia.com/g00/Game_modes?i10c.encReferrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D&i10c.ua=1#Captains_Mode).
+The code shows our algorithm for hero recommendation in DOTA 2 [Captain Mode](https://dota2.gamepedia.com/g00/Game_modes?i10c.encReferrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D&i10c.ua=1#Captains_Mode).
 
-The command line to simulate drafts between two teams (p0 & p1) according to Algorithm 1 in the paper is:  
+Below is the command line to simulate drafts between two teams (p0 & p1) according to Algorithm 1 in the paper:  
 ```
 python3.6 experiment.py --num_matches=NUM_MATCHS --p0=STRATEGY0 --p1=STRATEGY1 
 ```
@@ -24,10 +24,12 @@ Possible strategy strings are:
 * `assocrule`: association rule-based drafting
 
 ### Examples
+Simulate 500 matches, with one team adopting MCTS with 800 iterations and 0.5 exploration strength, and the other team adopting MCTS with 400 iterations and 0.5 exploration strength:
 ```
 python3.6 experiment.py --num_matches=500 --p0=mcts_800_0.5 --p1=mcts_400_0.5 
 ```
 
+Simulate 500 matches, with one team adopting MCTS with 800 iterations and 0.5 exploration strength, and the other team adopting MCTS with 400 iterations and 0.5 exploration strength:
 ```
 python3.6 experiment.py --num_matches=500 --p0=mcts_800_0.5 --p1=assocrule 
 ```

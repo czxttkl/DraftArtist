@@ -12,7 +12,6 @@ def parse_mcts_exp_parameters():
     parser.add_option("--num_matches", dest="num_matches", type="int", default=0)
     parser.add_option("--p0", dest="p0", type="string", default='')
     parser.add_option("--p1", dest="p1", type="string", default='')
-    parser.add_option("--env_path", dest="env_path", type="string", default='')
     (kwargs, args) = parser.parse_args()
     return kwargs
 

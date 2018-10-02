@@ -1,4 +1,4 @@
-from player import RandomPlayer, MCTSPlayer, HeroLineUpPlayer, HighestWinRatePlayer
+from player import RandomPlayer, MCTSPlayer, AssocRulePlayer, HighestWinRatePlayer
 from utils.parser import parse_mcts_maxiter_c, parse_rave_maxiter_c_k
 import pickle
 import logging
@@ -35,14 +35,14 @@ class Draft:
             max_iters, c = parse_mcts_maxiter_c(player_model_str)
             return MCTSPlayer(name=player_model_str, draft=self, maxiters=max_iters, c=c)
         elif player_model_str == 'assocrule':
-            return HeroLineUpPlayer(draft=self)
+            return AssocRulePlayer(draft=self)
         elif player_model_str == 'hwr':
             return HighestWinRatePlayer(draft=self)
         else:
             raise NotImplementedError
 
     def load(self, env_path):
-        with open('../output/{}'.format(env_path), 'rb') as f:
+        with open('models/{}'.format(env_path), 'rb') as f:
             # outcome model predicts the red team's  win rate
             # M is the number of champions
             outcome_model, M = pickle.load(f)

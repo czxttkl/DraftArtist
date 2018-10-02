@@ -39,7 +39,7 @@ class HighestWinRatePlayer(Player):
     def __init__(self, draft):
         self.draft = draft
         self.name = 'hwr'
-        with open('win_rate_dist/dota_win_rate_dist.pickle', 'rb') as f:
+        with open('models/hero_win_rates.pickle', 'rb') as f:
             self.win_rate_dist = pickle.load(f)
 
     def get_move(self, move_type):
@@ -115,7 +115,7 @@ class MCTSPlayer(Player):
         return root.select_final()
 
 
-class HeroLineUpPlayer(Player):
+class AssocRulePlayer(Player):
 
     def __init__(self, draft):
         self.draft = draft
