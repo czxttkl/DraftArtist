@@ -24,7 +24,7 @@ def experiment(match_id, p0_model_str, p1_model_str, env_path):
 
     final_red_team_win_rate = d.eval()
     duration = time.time() - t1
-    exp_str = 'match: {}, time: {:.3F}, red team predicted win rate: {:.5f}' \
+    exp_str = 'match: {}, time: {:.3F}, p0 predicted win rate: {:.5f}' \
         .format(match_id, duration, final_red_team_win_rate)
 
     return final_red_team_win_rate, duration, exp_str
@@ -56,6 +56,6 @@ if __name__ == '__main__':
         s += ', mean predicted win rate: {:.5f}\n'.format(np.average(red_team_win_rates))
         logger.warning(s)
 
-    logger.warning('{} matches, {} vs. {}. average time {:.5f}, average red team win rate {:.5f}, std {:.5f}'
+    logger.warning('{} matches, p0 {} vs. p1 {}. average time {:.5f}, average p0 win rate {:.5f}, std {:.5f}'
                    .format(num_matches, p0_model_str, p1_model_str,
                            np.average(times), np.average(red_team_win_rates), np.std(red_team_win_rates)))
