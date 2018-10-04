@@ -24,14 +24,16 @@ Possible strategy strings are:
 
 ### Examples
 ```
-# Simulate 500 matches, with the first team adopting MCTS with 100 iterations and 0.03125 exploration strength, and the second team adopting the association rule-based strategy:
+# Simulate 500 matches, with the first team adopting MCTS with 100 iterations and 0.03125 exploration strength, 
+# and the second team adopting the association rule-based strategy:
 python3.6 experiment.py --num_matches=500 --p0=mcts_100_0.03125 --p1=assocrule 
 # Result
 500 matches, p0 mcts_100_0.03125 vs. p1 assocrule. average time 2.09252, average p0 win rate 0.68968, std 0.15239 
 ```
 
 ```
-# Simulate 500 matches, with the first team adopting the association rule-based strategy, and the second team adopting MCTS with 100 iterations and 0.03125 exploration strength:
+# Simulate 500 matches, with the first team adopting the association rule-based strategy,
+# and the second team adopting MCTS with 100 iterations and 0.03125 exploration strength:
 python3.6 experiment.py --num_matches=500 --p0=assocrule --p1=mcts_100_0.03125 
 # Result
 500 matches, p0 assocrule vs. p1 mcts_100_0.03125. average time 2.12751, average p0 win rate 0.32866, std 0.15362 
