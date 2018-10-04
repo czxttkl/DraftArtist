@@ -36,10 +36,13 @@ python3.6 experiment.py --num_matches=500 --p0=assocrule --p1=mcts_100_0.03125
 # Result
 500 matches, p0 assocrule vs. p1 mcts_100_0.03125. average time 2.12751, average p0 win rate 0.32866, std 0.15362 
 ```
-[0.68968 + (1 - 0.32866)] / 2 = 0.68051, which is close to what we report (0.686) for UCT_100,0.03125 vs. AR in Table 5. 
+[0.68968 + (1 - 0.32866)] / 2 = 0.68051, which is close to what we report (0.686) for UCT_100,0.03125 vs. AR in Table 5. (Results vary a little depending on the random seed being used) 
 
 ### Files
-`apriori` files for association rule generation. 
+`apriori` relevant files for the association rule-based strategy.
+* `dota_lose_team_output.txt` hero combinations appear frequently in the same losing team 
+* `dota_oppo_team_output.txt` hero combinations appear frequently in opposite teams
+* `dota_win_team_output.txt` hero combinations appear frequently in the same winning team
 
 `input` input file folder
 * `dota.pickle` contains the processed dataset of 3 million matches from "Performance of machine learning algorithms in predicting
