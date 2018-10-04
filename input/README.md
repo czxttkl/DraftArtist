@@ -1,1 +1,1 @@
-`dota.pickle` is too large to push onto Github. Please download it from: 
+`dota.pickle` is too large to push onto Github. Please download it from: https://www.dropbox.com/s/vy4zei33725l8a4/dota.pickle?dl=0

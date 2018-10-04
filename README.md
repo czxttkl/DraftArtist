@@ -5,6 +5,7 @@ The Art of Drafting: A Team-Oriented Hero Recommendation System for Multiplayer 
 
 Authors: Zhengxing Chen, Truong-Huy D Nguyen, Yuyu Xu, Chris Amato, Seth Cooper, Yizhou Sun, Magy Seif El-Nasr
 
+Point of Contact: Zhengxing Chen, czxttkl@gmail.com
 ### Usage
 The code shows our algorithm for hero recommendation in DOTA 2 [Captain Mode](https://dota2.gamepedia.com/g00/Game_modes?i10c.encReferrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D&i10c.ua=1#Captains_Mode).
 
