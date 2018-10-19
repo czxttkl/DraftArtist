@@ -1,7 +1,7 @@
 # DraftArtist
 
 Example code for [
-The Art of Drafting: A Team-Oriented Hero Recommendation System for Multiplayer Online Battle Arena Games](https://arxiv.org/abs/1806.10130)
+The Art of Drafting: A Team-Oriented Hero Recommendation System for Multiplayer Online Battle Arena Games](https://dl.acm.org/citation.cfm?id=3240345)
 
 Authors: Zhengxing Chen, Truong-Huy D Nguyen, Yuyu Xu, Chris Amato, Seth Cooper, Yizhou Sun, Magy Seif El-Nasr
 
